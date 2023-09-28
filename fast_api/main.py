@@ -42,7 +42,7 @@ def update_user(user_id: str, fields:Field):
     response = requests.patch(URL+"/"+user_id,data=json.dumps(fields),headers=headers)
     return response.json()
 
-@app.patch("/deleteuser/{user_id}/")
+@app.patch("/user/{user_id}/")
 def delete_user(user_id: str):
     response = requests.delete(URL+"/"+user_id,headers=headers)
     return response.json()
