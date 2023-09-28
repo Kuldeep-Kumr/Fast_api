@@ -1,0 +1,3 @@
+TableName = ""
+BaseID = ""
+Token = ""
